@@ -7,8 +7,8 @@ const website = [
   { name: '/home', value: 1230 },
   { name: '/contact', value: 751 },
   { name: '/gallery', value: 471 },
-  { name: '/august-discount-offer', value: 280 },
-  { name: '/case-studies', value: 78 }
+  { name: '/august-discount-offer', value: 1000 },
+  { name: '/case-studies', value: 780 }
 ];
 
 const shop = [
@@ -23,7 +23,7 @@ const app = [
   { name: '/product-features', value: 676 },
   { name: '/about', value: 564 },
   { name: '/login', value: 234 },
-  { name: '/downloads', value: 191 }
+  { name: '/downloads', value: 300 }
 ];
 
 const data = [

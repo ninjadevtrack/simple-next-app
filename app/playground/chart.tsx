@@ -4,19 +4,22 @@ import { Card, AreaChart, Title, Text } from '@tremor/react';
 
 const data = [
   {
-    Month: 'Jan 21',
+    Month: 'Jan 20',
     Sales: 2890,
-    Profit: 2400
+    Profit: 2400,
+    Price: 5000
   },
   {
-    Month: 'Feb 21',
-    Sales: 1890,
-    Profit: 1398
+    Month: 'Jan 21',
+    Sales: 4000,
+    Profit: 1000,
+    Price: 0
   },
   {
     Month: 'Jan 22',
-    Sales: 3890,
-    Profit: 2980
+    Sales: 3000,
+    Profit: 4000,
+    Price: 6000
   }
 ];
 
@@ -28,9 +31,9 @@ export default function Example() {
       <AreaChart
         className="mt-4 h-80"
         data={data}
-        categories={['Sales', 'Profit']}
+        categories={['Sales', 'Profit', 'Price']}
         index="Month"
-        colors={['indigo', 'fuchsia']}
+        colors={['indigo', 'fuchsia', 'red']}
         valueFormatter={(number: number) =>
           `$ ${Intl.NumberFormat('us').format(number).toString()}`
         }
